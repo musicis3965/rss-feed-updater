@@ -5,7 +5,7 @@ document.getElementById('rssForm').addEventListener('submit', function(e) {
     const link = document.getElementById('link').value;
     
     // Call your backend API to update the RSS feed
-    fetch('YOUR_HEROKU_BACKEND_URL/update-rss', {
+    fetch('https://rss-feed-updater-caf03ebc2d3f.herokuapp.com/update-rss', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
